@@ -11,9 +11,11 @@
 } 
 body{
     background-color: rgb(126, 161, 145);
+    display: flex;
+    flex-direction: column;
 }
 header {
-    min-height: 300px;
+    min-height: 450px;
     background-image: url(https://images.pexels.com/photos/3875091/pexels-photo-3875091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-position: bottom;
     background-size: cover;
@@ -41,68 +43,57 @@ header div {
     margin-top: 10px;
     font-size: 40px;
 }
-.flexmiddle {
+main {
     display: flex;
     text-align:left;
-    margin: 30px 40px;
 }
-.flexmiddle div {
-    margin: 40px;
-    width: 50%;
+main div {
+    padding: 7%;
 }
 
-.flexmiddle h1 {
+main h1 {
     color: white;
     line-height: 90px;
     font-family: Heebo;
     font-size: 110px;
 
-}.flexmiddle div .title {
+}main div .title {
     line-height: 40px;
     color: black;
     font-size: 20px;
 }
 
-.flexmiddle div p {
+main div p {
     color: black;
     font-size: 14px;
 }
 
 footer {
     display: flex;
-    flex-direction: row;
-    margin: 0;
+}
 
+footer div {
+    padding: 0% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
-footer #f1 {
-    margin: 0;
-    background-color: rgb(170, 149, 106);
-    width: 50%;
-}
-footer #f1 .texto {
-    margin: 50px;
-    text-align: center;
+
+footer div .texto {
+    color: black;
     font-family: Nunito;
     font-size: 14px;
+    margin-top: 10%;
 }
-footer #f1 img {
-    width: 100%;
+
+footer .left{
+    background-color: rgb(170, 149, 106);
 }
-footer #f2 {
-    margin: 0;    
+footer .right{
     background-color: white;
-    width: 50%;
 }
-footer #f2 div {
-    margin: 40px;
-    text-align: center;
-    font-size: 28px;
-}
-footer #f2 img {
-    width: 100%;
-}
-footer #f2 button {
-    border: 0;
+footer div button {
     padding: 10px 15px;
     background-color:white;
     border: solid;
@@ -110,4 +101,8 @@ footer #f2 button {
     border-width: 1px;
     font-family: Nunito;
     font-size: 14px;
+}
+footer img {
+    width: 100%;
+    max-width: 350px;
 }
